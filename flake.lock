@@ -3,11 +3,11 @@
     "dots": {
       "flake": false,
       "locked": {
-        "lastModified": 1687531004,
-        "narHash": "sha256-pJiweoAWoesLhDqIoM/jKYk3rqBAP6xlW+own+Ta69w=",
+        "lastModified": 1687883409,
+        "narHash": "sha256-r0a8RJ8GxIauOQol10gVx1wQSMnjEm/QBKpT2XOEx5Q=",
         "owner": "danielefongo",
         "repo": "dots",
-        "rev": "4f56bc5dc331816b6091cb0403be7b95afdc4cb6",
+        "rev": "0b15ba6074c3443ccfee5575ecdbeacc9d3e69cf",
         "type": "github"
       },
       "original": {

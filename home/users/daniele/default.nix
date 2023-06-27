@@ -3,6 +3,7 @@
   imports = [
     ../../modules/core.nix
     ../../modules/dev.nix
+    ../../modules/git.nix
     ../../modules/neovim.nix
   ];
 
