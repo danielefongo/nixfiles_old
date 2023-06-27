@@ -9,7 +9,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: 
+  outputs = { self, nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -19,16 +19,13 @@
       lib = nixpkgs.lib;
     in {
       nixosConfigurations = {
-        daniele = lib.nixosSystem {
+        tower = lib.nixosSystem {
           inherit system pkgs;
           modules = [
-            ./configuration.nix
+            ./systems/tower
             home-manager.nixosModules.home-manager {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.daniele = {
-                imports = [ ./home.nix ];
-              };
             }
           ];
         };
