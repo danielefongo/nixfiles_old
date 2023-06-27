@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dots": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1687531004,
+        "narHash": "sha256-pJiweoAWoesLhDqIoM/jKYk3rqBAP6xlW+own+Ta69w=",
+        "owner": "danielefongo",
+        "repo": "dots",
+        "rev": "4f56bc5dc331816b6091cb0403be7b95afdc4cb6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "danielefongo",
+        "repo": "dots",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -39,6 +55,7 @@
     },
     "root": {
       "inputs": {
+        "dots": "dots",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }

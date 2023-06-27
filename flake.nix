@@ -7,9 +7,13 @@
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dots = {
+      url = "github:danielefongo/dots";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, dots, ... } @attrs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -21,11 +25,14 @@
       nixosConfigurations = {
         tower = lib.nixosSystem {
           inherit system pkgs;
+
+          specialArgs = attrs;
           modules = [
             ./systems/tower
             home-manager.nixosModules.home-manager {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.extraSpecialArgs = attrs // { inherit system; };
             }
           ];
         };
