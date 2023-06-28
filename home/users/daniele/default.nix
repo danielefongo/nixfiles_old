@@ -5,6 +5,7 @@
     ../../modules/desktop.nix
     ../../modules/dev.nix
     ../../modules/git.nix
+    ../../modules/i3.nix
     ../../modules/neovim.nix
   ];
 

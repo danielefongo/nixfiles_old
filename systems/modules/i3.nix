@@ -11,5 +11,7 @@
     };
     windowManager.i3.enable = true;
   };
+
+  services.dbus.enable = true;
 }
 
