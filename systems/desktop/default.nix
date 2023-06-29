@@ -5,6 +5,7 @@
     ../modules/i3.nix
     ../modules/networking.nix
     ../modules/sound.nix
+    ../modules/users
     ../modules/users/daniele.nix
     ./hardware-configuration.nix
   ];

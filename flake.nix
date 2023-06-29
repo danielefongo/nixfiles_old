@@ -21,19 +21,16 @@
         config.allowUnfree = true;
       };
       lib = nixpkgs.lib;
+      homeManager = { home-manager.extraSpecialArgs = attrs // { inherit system; }; };
     in {
       nixosConfigurations = {
-        tower = lib.nixosSystem {
+        desktop = lib.nixosSystem {
           inherit system pkgs;
 
           specialArgs = attrs;
           modules = [
-            ./systems/tower
-            home-manager.nixosModules.home-manager {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = attrs // { inherit system; };
-            }
+            ./systems/desktop
+            homeManager
           ];
         };
       };
