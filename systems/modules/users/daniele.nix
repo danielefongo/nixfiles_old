@@ -10,6 +10,6 @@
   programs.zsh.enable = true;
 
   home-manager.users.daniele.imports = [
-    ../../../home/users/daniele
+    ../../../home/users/daniele.nix
   ];
 }
