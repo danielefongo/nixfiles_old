@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     dots = {
-      url = "github:danielefongo/dots";
+      url = "git+file:./dots?shallow=true";
       flake = false;
     };
   };

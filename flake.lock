@@ -3,17 +3,19 @@
     "dots": {
       "flake": false,
       "locked": {
-        "lastModified": 1688039392,
-        "narHash": "sha256-xYNqZRcZekWwLfBaiaAkpM6PeaQtS65blHxUPyS10X0=",
-        "owner": "danielefongo",
-        "repo": "dots",
-        "rev": "6bf668a5f59f1122b392d529c006d1aa7d9e7fd6",
-        "type": "github"
+        "lastModified": 1688895626,
+        "narHash": "sha256-cTmuiC7sE3kuMyN0QD53tu0Q230sDqzV9vuRkUgz1Eo=",
+        "ref": "refs/heads/main",
+        "rev": "39b30b091bce44443f05f99f06711d3d3b872c30",
+        "revCount": 95,
+        "shallow": false,
+        "type": "git",
+        "url": "file:./dots"
       },
       "original": {
-        "owner": "danielefongo",
-        "repo": "dots",
-        "type": "github"
+        "shallow": false,
+        "type": "git",
+        "url": "file:./dots"
       }
     },
     "home-manager": {
