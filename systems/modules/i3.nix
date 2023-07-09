@@ -13,5 +13,6 @@
   };
 
   services.dbus.enable = true;
+  # services.picom.enable = true;
 }
 

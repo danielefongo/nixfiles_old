@@ -3,11 +3,11 @@
     "dots": {
       "flake": false,
       "locked": {
-        "lastModified": 1688908252,
-        "narHash": "sha256-30E0YTvkgN97aLSC/wtFeCjzL+6Paei/2IM6sarqgfo=",
-        "ref": "refs/heads/main",
-        "rev": "ade7077366becdc35085a203b09328dceee2e009",
-        "revCount": 96,
+        "lastModified": 1688923736,
+        "narHash": "sha256-PmmaAaCJeD9mV7P2q3K/lDwi4koGbhHtMv0GMHqvkPY=",
+        "ref": "refs/heads/nix",
+        "rev": "83fca9593ecfcde36b8f737157c7e35b6c9f871d",
+        "revCount": 97,
         "shallow": false,
         "type": "git",
         "url": "file:./dots"

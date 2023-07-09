@@ -7,5 +7,5 @@
   ];
 
   home.file.".tmux.conf".source = "${dots}/tmux/tmux.conf";
-  xdg.configFile."alacritty".source = "${dots}/alacritty";
+  xdg.configFile."alacritty/alacritty.yml".source = "${dots}/alacritty/alacritty.yml";
 }
