@@ -16,6 +16,8 @@
   time.timeZone = "Europe/Rome";
   i18n.defaultLocale = "en_US.UTF-8";
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   fonts.fonts = with pkgs; [
     font-awesome
     (nerdfonts.override { fonts = [ "Hasklig" ]; })
