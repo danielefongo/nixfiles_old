@@ -33,6 +33,15 @@
             homeManager
           ];
         };
+        vm = lib.nixosSystem {
+          inherit system pkgs;
+
+          specialArgs = attrs;
+          modules = [
+            ./systems/vm
+            homeManager
+          ];
+        };
       };
     };
 }
