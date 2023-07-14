@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{ pkgs, ... }: {
   users.users.daniele = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
@@ -9,7 +8,5 @@
 
   programs.zsh.enable = true;
 
-  home-manager.users.daniele.imports = [
-    ../../../home/users/daniele.nix
-  ];
+  home-manager.users.daniele.imports = [ ../../../home/users/daniele.nix ];
 }

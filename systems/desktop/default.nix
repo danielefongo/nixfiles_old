@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-{
+{ config, pkgs, ... }: {
   imports = [
     ../modules/base.nix
     ../modules/i3.nix
@@ -10,11 +9,7 @@
     ./hardware-configuration.nix
   ];
 
-  environment.systemPackages = with pkgs; [
-    git
-    vim
-    wget
-  ];
+  environment.systemPackages = with pkgs; [ git vim wget ];
 
   system.stateVersion = "23.05";
 }

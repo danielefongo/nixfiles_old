@@ -5,10 +5,7 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    extraPackages = with pkgs; [
-      gcc
-      gnumake
-    ];
+    extraPackages = with pkgs; [ gcc gnumake ];
   };
 
   xdg.configFile."nvim/init.lua".source = "${dots}/nvim/init.lua";

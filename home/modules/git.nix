@@ -1,5 +1,4 @@
-{ pkgs, dots, ... }:
-{
+{ pkgs, dots, ... }: {
   programs.git = {
     enable = true;
     delta.enable = true;

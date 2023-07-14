@@ -1,10 +1,5 @@
-{ pkgs, dots, ... }:
-{
-  home.packages = with pkgs; [
-    feh
-    i3
-    i3lock-fancy
-  ];
+{ pkgs, dots, ... }: {
+  home.packages = with pkgs; [ feh i3 i3lock-fancy ];
 
   xdg.configFile."i3" = {
     source = "${dots}/i3";

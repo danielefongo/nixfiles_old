@@ -1,5 +1,4 @@
-{ pkgs, dots, ... }:
-{
+{ pkgs, dots, ... }: {
   imports = [
     ../modules/alacritty.nix
     ../modules/core.nix
@@ -17,7 +16,5 @@
 
   programs.home-manager.enable = true;
   home.stateVersion = "23.05";
-  home.file = {
-    "dotfiles/dots".source = dots;
-  };
+  home.file = { "dotfiles/dots".source = dots; };
 }

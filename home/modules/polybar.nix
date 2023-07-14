@@ -18,7 +18,8 @@
     Install = { WantedBy = [ "graphical-session.target" ]; };
 
     Service = {
-      ExecStart = pkgs.writeScript "polybar-launch" (builtins.readFile "${dots}/polybar/launch.sh");
+      ExecStart = pkgs.writeScript "polybar-launch"
+        (builtins.readFile "${dots}/polybar/launch.sh");
       Restart = "always";
       RestartSec = 2;
     };

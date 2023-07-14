@@ -1,8 +1,5 @@
-{ pkgs, dots, ... }:
-{
-  home.packages = with pkgs; [
-    dunst
-  ];
+{ pkgs, dots, ... }: {
+  home.packages = with pkgs; [ dunst ];
 
   xdg.configFile."dunst" = {
     source = "${dots}/dunst";
