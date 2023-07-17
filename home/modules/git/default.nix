@@ -1,4 +1,4 @@
-{ pkgs, dots, ... }: {
+{ pkgs, ... }: {
   programs.git = {
     enable = true;
     delta.enable = true;
@@ -6,5 +6,5 @@
 
   home.packages = [ pkgs.tig ];
 
-  xdg.configFile."git".source = "${dots}/git";
+  xdg.configFile."git".source = ./config;
 }

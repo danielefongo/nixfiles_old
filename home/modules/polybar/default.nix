@@ -1,10 +1,10 @@
-{ config, options, lib, pkgs, dots, ... }:
+{ config, options, lib, pkgs, ... }:
 
 {
   home.packages = [ pkgs.polybarFull ];
 
   xdg.configFile."polybar/config" = {
-    source = "${dots}/polybar/config";
+    source = ./config/config;
     onChange = "${pkgs.systemd}/bin/systemctl --user restart polybar.service";
   };
 
@@ -19,7 +19,7 @@
 
     Service = {
       ExecStart = pkgs.writeScript "polybar-launch"
-        (builtins.readFile "${dots}/polybar/launch.sh");
+        (builtins.readFile ./config/launch.sh);
       Restart = "always";
       RestartSec = 2;
     };

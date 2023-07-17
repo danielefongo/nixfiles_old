@@ -1,20 +1,20 @@
-{ pkgs, dots, ... }: {
+{ pkgs, ... }: {
   imports = [
-    ../modules/alacritty.nix
+    ../modules/alacritty
     ../modules/core.nix
-    ../modules/desktop.nix
+    ../modules/desktop
     ../modules/dev.nix
-    ../modules/dunst.nix
-    ../modules/git.nix
-    ../modules/i3.nix
-    ../modules/picom.nix
-    ../modules/polybar.nix
-    ../modules/rofi.nix
-    ../modules/neovim.nix
-    ../modules/zsh.nix
+    ../modules/dunst
+    ../modules/git
+    ../modules/i3
+    ../modules/picom
+    ../modules/polybar
+    ../modules/rofi
+    ../modules/tmux
+    ../modules/neovim
+    ../modules/zsh
   ];
 
   programs.home-manager.enable = true;
   home.stateVersion = "23.05";
-  home.file = { "dotfiles/dots".source = dots; };
 }

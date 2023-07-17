@@ -1,0 +1,19 @@
+configuration {
+  combi-modi: "window,drun";
+  combi-hide-mode-prefix: true;
+  display-combi: "Switch to";
+  kb-remove-to-eol: "";
+  kb-accept-entry: "Return,KP_Enter";
+  kb-row-up: "Up,Control+k";
+  kb-row-down: "Down,Control+j";
+  timeout {
+      action: "kb-cancel";
+      delay: 0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method: "name";
+  }
+}
+
+@theme "theme"

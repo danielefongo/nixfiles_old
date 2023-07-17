@@ -1,10 +1,10 @@
-{ config, options, lib, pkgs, dots, ... }:
+{ config, options, lib, pkgs, ... }:
 
 {
   home.packages = [ pkgs.picom ];
 
   xdg.configFile."picom/picom.conf" = {
-    source = "${dots}/picom/picom.conf";
+    source = ./config/picom.conf;
     onChange = "${pkgs.systemd}/bin/systemctl --user restart picom.service";
   };
 

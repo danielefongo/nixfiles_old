@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+node theme/index.js
+sudo nixos-rebuild switch --flake .#$1

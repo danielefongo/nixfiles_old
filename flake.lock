@@ -1,23 +1,5 @@
 {
   "nodes": {
-    "dots": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1689327442,
-        "narHash": "sha256-NLUlOTg6Q/uh+PUK7ZQT0uhF1YpzGSBwsxZjf4ii36U=",
-        "ref": "refs/heads/nix",
-        "rev": "887a0b3a2e1dc993adcef4b3ce8dd61913342117",
-        "revCount": 98,
-        "shallow": false,
-        "type": "git",
-        "url": "file:./dots"
-      },
-      "original": {
-        "shallow": false,
-        "type": "git",
-        "url": "file:./dots"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -57,7 +39,6 @@
     },
     "root": {
       "inputs": {
-        "dots": "dots",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       }

@@ -9,4 +9,6 @@
     telegram-desktop
     whatsapp-for-linux
   ];
+
+  home.file."wallpaper.jpg".source = ./wallpaper.jpg;
 }
